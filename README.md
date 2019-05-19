@@ -4,11 +4,13 @@ SPFx webpart that displays a selectable date/time and displays it in different t
 
 ### Version history
 
-May 2019 1.0.1 Initial release
+| Date     | Version | Comments        |
+| -------- | ------- | --------------- |
+| May 2019 | 1.0.1   | Initial release |
 
 ### Features
 
-- TODO
-- TODO
+- Display current local date
+- Display date picker
   - 1
   - 2
