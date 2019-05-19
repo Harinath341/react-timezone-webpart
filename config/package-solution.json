@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "react-timezone-webpart-client-side-solution",
+    "id": "abdd3967-f115-402c-bd10-8d357ba0b134",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "isDomainIsolated": false
+  },
+  "paths": {
+    "zippedPackage": "solution/react-timezone-webpart.sppkg"
+  }
+}
