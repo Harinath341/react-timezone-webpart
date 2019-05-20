@@ -3,7 +3,7 @@
   "solution": {
     "name": "timezone solution",
     "id": "abdd3967-f115-402c-bd10-8d357ba0b134",
-    "version": "1.0.0.0",
+    "version": "1.0.0.1",
     "includeClientSideAssets": true,
     "isDomainIsolated": false
   },

@@ -1,7 +1,11 @@
 #################
 # Configuration #
 #################
-$catalogSite = "https://pandalenses.sharepoint.com/sites/applab" # => App Catalog site
+
+$dir = $MyInvocation.MyCommand.Path|Split-Path
+[xml]$ConfigFile = Get-Content "$dir\Settings.xml"
+$catalogSite = $ConfigFile.Settings.AppCatalogSite
+$credentials = $ConfigFile.Settings.Credentials
 #######
 # End #
 #######
@@ -17,7 +21,7 @@ Write-Host "packagePath: $packagePath"
 $skipFeatureDeployment = $packageConfig.solution.skipFeatureDeployment
 
 # Connect-PnPOnline $catalogSite -Credentials (Get-Credential)
-Connect-PnPOnline -Url $catalogSite -Credentials "panda"
+Connect-PnPOnline -Url $catalogSite -Credentials $credentials
 
 # Adding and publishing the App package
 If ($skipFeatureDeployment -ne $true) {
